@@ -1,0 +1,73 @@
+[gd_scene load_steps=12 format=3 uid="uid://gdey7cubve7s"]
+
+[ext_resource type="Script" uid="uid://b57qnnv4icwyr" path="res://animated_grid_container.gd" id="1_p8e5y"]
+
+[sub_resource type="Gradient" id="Gradient_g76yj"]
+colors = PackedColorArray(0.172761, 7.70092e-07, 0.966038, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cyfg6"]
+gradient = SubResource("Gradient_g76yj")
+
+[sub_resource type="Gradient" id="Gradient_o5mb4"]
+colors = PackedColorArray(0.589729, 2.46429e-05, 0.445828, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_e31r2"]
+gradient = SubResource("Gradient_o5mb4")
+
+[sub_resource type="Gradient" id="Gradient_m8w1y"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mlwfd"]
+gradient = SubResource("Gradient_m8w1y")
+
+[sub_resource type="Gradient" id="Gradient_2hoa8"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_41vw4"]
+gradient = SubResource("Gradient_2hoa8")
+
+[sub_resource type="Gradient" id="Gradient_h6efn"]
+colors = PackedColorArray(0.361081, 0.348749, 9.62615e-08, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jyrc3"]
+gradient = SubResource("Gradient_h6efn")
+
+[node name="animated_grid_container" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 138.0
+offset_top = 109.0
+offset_right = -104.0
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+script = ExtResource("1_p8e5y")
+rows = 2
+horizontal_fill_direction = 0
+vertical_fill_direction = 0
+update_ease = 0.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(5, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_cyfg6")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(5, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_e31r2")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(5, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mlwfd")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(5, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_41vw4")
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(5, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_jyrc3")
